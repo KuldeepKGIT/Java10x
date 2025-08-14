@@ -6,5 +6,8 @@ public class Demo {
         str.concat("kumar");
         str.concat("290497");
         System.out.println(str);
+        String result = "";
+        result = result.concat("kumar");
+        System.out.println(result);
     }
 }
