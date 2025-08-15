@@ -15,8 +15,6 @@ public class Fibonacci {
             int next = second + first;
             first = second;
             second = next;
-
-
         }
     }
 }
