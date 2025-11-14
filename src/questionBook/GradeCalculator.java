@@ -6,6 +6,10 @@ public class GradeCalculator {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         System.out.println("Enter the obtained marks");
+        if(!scanner.hasNextInt()){
+            System.out.println("Enter a valid input");
+            return;
+        }
         int marks = scanner.nextInt();
         char grade;
         if(marks >= 90 && marks<=100){
