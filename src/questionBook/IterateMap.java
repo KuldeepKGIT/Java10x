@@ -10,7 +10,9 @@ public class IterateMap {
         map.put("Banana",2);
         map.put("Orange",3);
         for(Map.Entry<String, Integer> entry : map.entrySet()){
-            System.out.println(entry.getKey()+" : "+entry.getValue());
+            System.out.println(entry.getKey()+" : "+entry.getValue()
+
+            );
         }
     }
 }
