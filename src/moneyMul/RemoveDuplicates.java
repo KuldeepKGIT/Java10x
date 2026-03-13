@@ -1,0 +1,27 @@
+package moneyMul;
+
+import java.util.HashSet;
+import java.util.Scanner;
+import java.util.Set;
+
+public class RemoveDuplicates {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("Enter a String!");
+        String str = scanner.nextLine();
+        System.out.println("Output is : "+removeDup(str));
+
+    }
+    public static String removeDup(String str){
+        Set<Character> set = new HashSet<>();
+        for(int i=0; i<str.length(); i++){
+            char ch = str.charAt(i);
+            set.add(ch);
+        }
+        StringBuilder result = new StringBuilder();
+        for(char c : set){
+            result.append(c);
+        }
+        return result.toString();
+    }
+}
