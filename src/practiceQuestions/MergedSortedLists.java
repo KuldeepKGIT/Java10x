@@ -22,7 +22,7 @@ public class MergedSortedLists {
                 result.add(list2.get(j++));
             }
         }
-        while(i<list1.size()){
+        while(i<list1.size()){          // loops to add any remaining element in either of the list
             result.add(list1.get(i++));
         }
         while(j<list2.size()){
